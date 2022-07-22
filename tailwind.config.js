@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'footer-pattern': "url('/img/bg-img.png')",
+      },
+      colors: {
+        'light-gray': "#F4F4F5",
+      }
+    },
   },
   plugins: [],
 }
