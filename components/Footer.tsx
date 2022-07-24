@@ -9,9 +9,9 @@ type FooterProps = {
 const Footer:React.FC<FooterProps> = ({img, width}) => {
     
     return (
-        <footer className="bg-footer-pattern bg-cover w-full h-[202px] lg:h-[600px] absolute left--6 bottom-0 flex justify-center">
+        <footer className="bg-footer-pattern bg-cover w-full h-[202px] lg:h-[600px] absolute left--6 bottom-0 flex justify-center z-0">
             {/* Avatar */}
-            <Image width={width} height={252} src={img} alt="" className=''/>
+            <Image width={width} height={252} src={img} alt="" className=' -z-10 '/>
 
         </footer>
     )

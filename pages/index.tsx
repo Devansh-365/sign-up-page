@@ -11,10 +11,6 @@ const Home: NextPage = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
-
-      <Footer img="/img/avatar3.png" width={358} />
     </div>
   )
 }
