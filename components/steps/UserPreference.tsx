@@ -20,12 +20,15 @@ const UserPreference:React.FC<UserPreferenceProps> = ({values, handleChange}) =>
                 defaultValue={values.email}
                 onChange={handleChange("email")} />
             <H1 title="Prefered city to work?" />
-            <select className="select select-primary max-w-xs text-semibold p-2 rounded-md shadow-lg pr-14 mb-5 bg-light-gray">
+            <select 
+            value={values.preferred_city}
+            onChange={(e) => values.preferred_city = e.target.value}
+            className="select select-primary max-w-xs text-semibold p-2 rounded-md shadow-lg pr-14 mb-5 bg-light-gray">
             <option disabled selected>Eg. Bengaluru, Mumbai</option>
-            <option>Game of Thrones</option>
-            <option>Lost</option>
-            <option>Breaking Bad</option>
-            <option>Walking Dead</option>
+            <option>Bengaluru</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Pune</option>
             </select>
             <div>
                 <h3 className='text-semibold text-sm'>Top cities you may prefer:</h3>
@@ -33,7 +36,7 @@ const UserPreference:React.FC<UserPreferenceProps> = ({values, handleChange}) =>
                 {cityList.map((item) => (
                     <button
                     onClick={() => {values.preferred_city = item}}
-                    className='px-4 py-3 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center bg-gradient-to-r focus:from-cyan-500 focus:to-yellow-200] transition duration-150 ease-in-out'>{item}</button>
+                    className='px-4 py-3 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center transition duration-150 ease-in-out'>{item}</button>
                 ))}
                 </div>
             </div>

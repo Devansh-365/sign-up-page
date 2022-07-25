@@ -25,7 +25,7 @@ const UserName:React.FC<UserNameProps> = ({values, handleChange}) => {
                         <button
                         key={item}
                         onClick={() => values.gender = item}  
-                        className='w-16 h-16 bg-gray-100 rounded-md shadow-md cursor-pointer'>f</button>
+                        className='w-16 h-16 bg-gray-100 rounded-md shadow-md cursor-pointer'>{item}</button>
                     ))}
                 </div>
             </div>           

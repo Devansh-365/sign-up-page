@@ -10,7 +10,7 @@ const VerifyPhoneNum:React.FC<VerifyPhoneNumProps> = () => {
     
     return (
         <>
-        <div className='ml-16 md:ml-24 m-24 w-1/2 space-y-2'>
+        <div className='ml-16 md:ml-24 m-24 w-1/2 space-y-4'>
             <H1 title='Enter Otp' />
             <OtpForm />
             <a className="font-semibold underline border-red solid text-[#6776F]">Resend the otp</a>

@@ -44,9 +44,9 @@ const userstepform:React.FC<userstepformProps> = () => {
           let resJson = await res.json();
           if (res.status === 200) {
             console.log("lets go")
-            toast("User created successfully");
+            toast.success('User created successfully');
           } else {
-            toast("Some error occured");
+            toast.error("Some error occured");
           }
         } catch (err) {
           console.log(err);
@@ -68,8 +68,6 @@ const userstepform:React.FC<userstepformProps> = () => {
     const handleChange = (input: any) => (e: any) => {
         setMultiFormValues({...multiFormValues, [input]: e.target.value})
     }
-
-    console.log(handleNext)
 
     return (
         <>

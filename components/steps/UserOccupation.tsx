@@ -30,7 +30,7 @@ const UserOccupation:React.FC<UserOccupationProps> = ({values, handleChange}) =>
             <div className='space-x-3 flex sm:w-1/2'>
             {rolesList.map((item) => (
                 <button
-                className='px-4 py-3 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center bg-gradient-to-r focus:from-cyan-500 focus:to-yellow-200] transition duration-150 ease-in-out'>{item}</button>
+                className='px-4 py-3 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center transition duration-150 ease-in-out'>{item}</button>
             ))}
             </div>
            </div>
@@ -40,8 +40,8 @@ const UserOccupation:React.FC<UserOccupationProps> = ({values, handleChange}) =>
             <button
             key={item}
             onClick={() => values.experience = item} 
-            onChange = {handleChange("experience")}
-            className='px-3 py-2 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center bg-gradient-to-r focus:from-cyan-500 focus:to-yellow-200] transition duration-150 ease-in-out'>{item}</button>
+            onChange = {() => values.experience = ""}
+            className='px-3 py-2 bg-white shadow-md rounded-md text-[#6776FF] font-semibold text-sm text-center focus:bg-[#6776FF] focus:text-white transition duration-150 ease-in-out'>{item}</button>
            ))}
            </div>
         </div>

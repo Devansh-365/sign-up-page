@@ -13,11 +13,11 @@ const UserPhoneNum:React.FC<UserPhoneNumProps> = () => {
     const [checked, setChecked] = useState(false);
     
     return (
-        <div className='ml-16 md:ml-24 m-24 w-1/2 '>
+        <div className='ml-16 md:ml-24 m-24 w-3/4 md:w-1/2 space-y-8'>
             <H1 title='Your mobile number?' />
             <div className='bg-[#F4F4F5] max-w-[300px] rounded-md shadow-lg flex justify-evenly'>
             <PhoneInput
-                className='h-12 font-semibold outline-none'
+                className=' font-semibold outline-none p-2'
                 international
                 defaultCountry="IN"
                 placeholder="Enter phone number"
